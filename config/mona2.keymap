@@ -76,21 +76,21 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                   &kp T                                                &kp Y        &kp U  &kp I      &kp O    &lt 6 P
-&kp A           &kp S         &kp D         &kp F                   &kp G                                 &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &lt 4 B                  &lt 3 COLON    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp TAB         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 5 SPACE  &lt 2 INTERNATIONAL_4    &kp BACKSPACE  &lt 1 ENTER                             &kp DELETE
+&kp Q           &kp W         &kp E         &kp R                   &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &lt 6 P
+&kp A           &kp S         &kp D         &kp F                   &kp G                                 &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &lt 4 B                  &lt 3 COLON      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp TAB         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 5 SPACE  &lt 2 INTERNATIONAL_4    &lt 3 BACKSPACE  &lt 1 ENTER                             &kp DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1_symb {
+        layer_1_winSymb {
             bindings = <
-&kp CARET  &kp N7        &kp N8        &kp N9        &kp NUMBER_0                          &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans                  &kp LS(0x87)  &kp RIGHT_BRACE    &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans    &kp UNDER     &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans     &trans        &trans        &trans        &trans        &trans    &trans        &trans                                                                                &trans
+&trans  &kp N7        &kp N8        &kp N9        &kp NUMBER_0                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp PLUS           &kp MINUS          &kp PRINTSCREEN
+&trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans                  &kp LS(0x87)      &kp RIGHT_BRACE    &kp PIPE              &kp DOUBLE_QUOTES  &kp SLASH          &kp BACKSLASH
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans    &kp SINGLE_QUOTE  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PAGE_UP        &kp LS(PAGE_DOWN)  &kp PIPE
+&trans  &trans        &trans        &trans        &trans        &trans    &trans            &trans                                                                         &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -107,12 +107,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3_num {
+        layer_3_macSymb {
             bindings = <
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                    &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PRINTSCREEN
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                   &trans
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp MINUS      &kp PRINTSCREEN
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &trans                     &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK  &kp SLASH      &kp BACKSLASH
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans        &trans       &kp COLON       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PAGE_UP   &kp PAGE_DOWN  &kp PIPE
+&trans  &trans        &trans        &kp LANGUAGE_2  &trans        &kp LANG1    &trans          &trans                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -149,15 +149,6 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        layer_7_macSymb {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans               &kp UNDERSCORE  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LANG2  &trans  &kp LANG1    &trans          &trans                          &trans
-            >;
         };
     };
 };
